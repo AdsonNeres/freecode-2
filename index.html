@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisa</title>
+</head>
+<body>
+    <header>
+    <h1 id="titulo">Formulário de Pesquisa</h1>
+    <p class="paragrafo" id="descricao">Obrigado por dedicar seu tempo para nos ajudar a melhorar</p>
+    </header>
+        <div class="container">
+    <form id="survey-form">
+        <section class="cadastro">
+            <label for="name"><p>Nome e sobrenome</p> <input class="teste" type="text" id="name" placeholder="Digite seu nome" required>
+            </label>
+
+            <label for="email"><p>E-mail</p><input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </label>
+
+            <label for="number"><p>Idade <span class="opcional">(opcional)</span></p><input type="number" id="number" min="16" max="100" minlength="2" maxlength="2" placeholder="Idade">
+            </label>
+        </section>
+
+        <section class="opcoes">
+            <label for="selecione"><p>Qual opção melhor descreve sua função atual?</p>
+            <select id="selecione">
+                <option disabled selected value="0">Selecione uma opção</option>
+                <option value="1">Estudante</option>
+                <option value="2">Trabalho em tempo integral</option>
+                <option value="3">Aprendiz em tempo integral</option>
+                <option value="4">Desempregado</option>
+                <option value="5">Prefiro não dizer</option>
+                <option value="6">Outros</option>
+            </select>
+            </label>
+        </section>
+
+        <section>
+            <label class="recomenda" for="recomendaria"><p>De 0 a 5 quanto você recomendaria a um amigo?</p>
+                1 <input class="escolha" type="radio" name="1a5" id="negativo"><br>
+                2 <input class="escolha" type="radio" name="1a5" id="quase"><br>
+                3 <input class="escolha" type="radio" name="1a5" id="intermedio"><br>
+                4 <input class="escolha" type="radio" name="1a5" id="bom"><br>
+                5 <input class="escolha" type="radio" name="1a5" id="excelente"><br>
+            </label>
+        </section>
+
+        <section class="hobby">
+            <label for=""><p>Qual é o seu hobby favorito?</p>
+                <select>
+                <option disabled selected value="0"> Selecione uma opção</option>
+                <option value="1">Atividades físicas</option>
+                <option value="2">Assistir filmes</option>
+                <option value="3">Fotografia</option>
+                <option value="4">Jogar videogames</option>
+                <option value="5">Viajar</option>
+                <option value="6">Jogar futebol</option>
+                </select>
+            </label>
+        </section>
+
+        <div class="conheceu">
+            <p>Como nos conheceu?</p>
+            <label for="facebook">
+                <input type="checkbox" value="1"id="1"><span class="box">Facebook </span>
+            </label>
+            <label for="instagram">   
+                <input type="checkbox" value="2"id="2"><span class="box">Instagram</span>
+            </label>
+            <label for="youtube">
+                <input type="checkbox" value="3"id="3"><span class="box">Youtube</span>
+            </label>
+            <label for="linkedin">
+                <input type="checkbox" value="4"id="4"><span class="box">Linkedin</span>
+            </label>
+            <label for="google">
+                <input type="checkbox" value="5"id="5"><span class="box">Google</span>
+            </label>
+            <label for="outros">
+                <input type="checkbox" value="6"id="6"><span class="box">Outros</span>
+            </label>
+        </div>
+
+        <section class="info">
+            <label for="comente"> <p>Algum comentário ou sugestão?</p>
+                <textarea placeholder="Deixe aqui seu comentário..." name="info" id="info" cols="30" rows="4">
+
+                </textarea>
+            </label>
+        </section>
+
+        <section>
+        <label for="termos">
+        <input type="checkbox" id="Aceito">Eu aceito os <a href="#">Termo e Condições</a>
+        </label>
+
+        <input class="bnt" type="submit" id="submit" value="Enviar">
+    </section>
+    </form>
+    </div>
+</body>
+</html>
