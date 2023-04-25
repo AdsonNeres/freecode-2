@@ -17,8 +17,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-
 }
 h1 {
     font-size: 2.3em;
@@ -37,7 +35,7 @@ h1 {
 
 div.container {
     background-color: hsl(240, 30%, 21%);
-    width: 60%;
+    width: 90%;
     min-width: 350px;
     height: 120vh;
     margin: 20px auto ;
