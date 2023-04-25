@@ -1,0 +1,56 @@
+body {
+    background-color: darkgray;
+}
+div.conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.obrigado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    background-color: darkgray;
+    animation-name: obrigado;
+    animation-duration: 7s;
+    padding: 15px;
+}
+
+@keyframes obrigado {
+    0% {background-color:  #398bf7};
+    25% {background-color: #981aa8 };
+    35% {background-color: gold;}
+    45% {background-color:  darkgreen;}
+    75% {background-color:  orangered;}
+    50% {background-color: #cea10e}
+    100% {background-color: crimson}
+}
+
+div.obrigado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 5em;
+
+}
+
+p {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    div.obrigado {
+        min-width: 320px;
+    }
+    h1, p {
+        font-size: 2em;
+    }
+    
+}
